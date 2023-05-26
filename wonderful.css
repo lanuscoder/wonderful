@@ -1,0 +1,70 @@
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+  }
+@keyframes flyup {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(SecretMemoriesDemo-8MY3B.ttf);
+}
+
+@keyframes cher {
+    from {
+        transform: translateX(100%);
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+    }
+    to {
+        transform: translateX(-100%);
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 
+      0 0 40px #00e63a, 0 0 50px #00e63a;
+    }
+}
+body{
+    background-color: black;
+}
+  .floating {
+      font-size: 58px;
+      color: white;
+      text-align: center;
+      font-family: monospace;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e63a, 
+      0 0 40px #00e63a;
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+
+  .flyup {
+    font-size: 58px;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0400e6, 
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #0400e6;
+    animation-name: flyup;
+    animation-duration: 5s;
+    animation-iteration-count: linear;
+    animation-timing-function: ease-in-out;
+  }
+
+  .run{
+    font-size: 58px;
+    color: black;
+    font-family: myFirstFont;
+    animation: cher 10s linear infinite;
+    animation-delay: 5s;
+  }
+
+  
